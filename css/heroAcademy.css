@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+.header {
+  background: #ff0033;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  text-shadow: 0 0 10px yellow;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 28px;
+  height: 3px;
+  background: white;
+}
+
+/* CONTENIDO */
+.contenedor {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+}
+
+.articulo {
+  width: 70%;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.articulo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ASIDE */
+.publicidad {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.publicidad div {
+  background: #222;
+  padding: 10px;
+  border-left: 5px solid yellow;
+  border-radius: 8px;
+}
+
+/* HÉROES */
+#equipo {
+  text-align: center;
+  padding: 30px;
+}
+
+.heroes-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero-card {
+  background: #111;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid yellow;
+}
+
+.hero-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .articulo,
+  .publicidad {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #ff0033;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav.nav-active {
+    display: flex;
+  }
+}

@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.encabezado {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e62429;
+}
+
+.menu a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #e62429;
+}
+
+.buscador input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.banner {
+  display: flex;
+  padding: 20px;
+  background: linear-gradient(to right, #000, #101030);
+  
+}
+
+.izquierda img {
+  width: 180px;
+  margin: 10px 0;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.centro {
+  flex: 3;
+  text-align: center;
+  position: relative;
+}
+
+#imgg {
+  width: 700px;
+  height: 400px;
+  
+
+}
+
+.texto {
+ width: 90%;
+ height: 400px;
+  background: rgb(246, 8, 8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 50px;
+  
+}
+
+.texto h2 {
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+.texto button {
+  background: #e62429;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.texto button:hover {
+  background: #b91d23;
+}
+
+
+
+.recomendado {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.series {
+  padding: 30px;
+  text-align: center;
+}
+
+.series h2 {
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+.comics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.comics div img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.comics p {
+  margin-top: 5px;
+}
